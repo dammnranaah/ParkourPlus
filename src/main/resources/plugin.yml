@@ -1,0 +1,22 @@
+name: ParkourPlus
+main: com.dammnranaah.parkourplus.ParkourPlus
+version: ${project.version}
+author: dammnranaah
+description: Timed parkour courses with leaderboards, rewards, and challenges.
+api-version: '1.21'
+commands:
+  parkour:
+    description: Base command for ParkourPlus
+    usage: |
+      /parkour start <course>
+      /parkour leave
+      /parkour stats
+      /parkour leaderboard <course>
+      /parkour create <course> [EASY|MEDIUM|HARD]
+      /parkour select <course>
+      /parkour setstart | setfinish | setcheckpoint
+    aliases: [pk]
+permissions:
+  parkourplus.admin:
+    description: Allows creating courses and setting checkpoints
+    default: op
